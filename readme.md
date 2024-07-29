@@ -19,8 +19,8 @@ This project implements a Retrieval-Augmented Generation (RAG) system for analyz
 
 1. Clone the repository:
    ```
-   git clone [your-repo-link]
-   cd [your-repo-name]
+   git clone [The Repo-Link]
+   cd [The Directory]
    ```
 
 2. Install the required packages:
