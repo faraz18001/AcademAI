@@ -1,5 +1,22 @@
 ## Overview
+```markdown
+## RAG System for Paper Analysis Flow Chart
 
+```mermaid
+graph TD
+    A[Start] --> B[Load PDF Paper]
+    B --> C[Split Text into Chunks]
+    C --> D[Create Vector Embeddings]
+    D --> E[Build FAISS Index]
+    E --> F[User Selects Question]
+    F --> G[Retrieve Relevant Text Chunks]
+    G --> H[Generate Answer using Qwen 1.5B Model]
+    H --> I[Display Answer to User]
+    I --> J{Another Question?}
+    J -->|Yes| F
+    J -->|No| K[End]
+```
+```
 This project implements a Retrieval-Augmented Generation (RAG) system for analyzing research papers. It uses a local language model to extract key information from a given PDF paper based on predefined questions. The tool leverages various components from the LangChain library to create an efficient document processing and question-answering pipeline.
 
 ## Features
