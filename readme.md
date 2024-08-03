@@ -1,6 +1,8 @@
-## Overview
-```markdown
-## RAG System for Paper Analysis Flow Chart
+# RAG System for Paper Analysis
+
+This project implements a Retrieval-Augmented Generation (RAG) system for analyzing research papers. It uses a local language model to extract key information from a given PDF paper based on predefined questions. The tool leverages various components from the LangChain library to create an efficient document processing and question-answering pipeline.
+
+## Flow Chart
 
 ```mermaid
 graph TD
@@ -16,8 +18,6 @@ graph TD
     J -->|Yes| F
     J -->|No| K[End]
 ```
-```
-This project implements a Retrieval-Augmented Generation (RAG) system for analyzing research papers. It uses a local language model to extract key information from a given PDF paper based on predefined questions. The tool leverages various components from the LangChain library to create an efficient document processing and question-answering pipeline.
 
 ## Features
 
@@ -35,21 +35,24 @@ This project implements a Retrieval-Augmented Generation (RAG) system for analyz
 ## Installation
 
 1. Clone the repository:
+
    ```
    git clone [The Repo-Link]
    cd [The Directory]
    ```
 
 2. Install the required packages:
+
    ```
    pip install langchain langchain_community langchain_text_splitters faiss-cpu sentence-transformers pypdf
    ```
 
 3. Install the Ollama package and download the Qwen 1.5B model:
+
    ```
    # Install Ollama (instructions may vary based on your OS)
    curl https://ollama.ai/install.sh | sh
-   
+
    # Pull the Qwen 1.5B model
    ollama pull qwen2:1.5b
    ```
@@ -59,6 +62,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system for analyz
 1. Place your research paper (in PDF format) in the project directory and name it `paper.pdf`.
 
 2. Run the script:
+
    ```
    python rag_paper_analysis.py
    ```
@@ -95,4 +99,3 @@ You can modify the `questions` list in the script to add or change the predefine
 ## Contributing
 
 Contributions to improve the tool are welcome. Please feel free to submit issues or pull requests.
-
